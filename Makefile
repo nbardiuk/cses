@@ -18,4 +18,4 @@ test-%: ./target/%
 	@ bb ./tests/run-tests.clj $*
 
 .PHONY: test
-test: test-a_plus_b test-weird_algorithm
+test: test-a_plus_b test-weird_algorithm test-permutations

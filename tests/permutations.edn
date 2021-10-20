@@ -1,0 +1,5 @@
+[{:scenario "any solution 5" :input "5" :expected "4 2 5 3 1"}
+ {:scenario "any solution 4" :input "4" :expected "3 1 4 2"}
+ {:scenario "no solution for 3" :input "3" :expected "NO SOLUTION"}
+ {:scenario "no solution for 2" :input "2" :expected "NO SOLUTION"}
+ {:scenario "unique solution 1" :input "1" :expected "1"}]
