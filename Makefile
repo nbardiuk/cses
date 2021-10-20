@@ -15,7 +15,7 @@ target:
 
 .PHONY: test-%
 test-%: ./target/%
-	@ bb ./tests/run-tests.clj $*
+	@ bb ./tests/run-tests.clj ./target/$* ./tests/$*.edn
 
 .PHONY: test
-test: test-a_plus_b test-weird_algorithm test-permutations
+test: $(patsubst tests/%.edn,test-%,$(wildcard tests/*.edn))

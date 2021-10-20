@@ -6,10 +6,8 @@
    [clojure.test :refer [is deftest run-tests testing successful?]]))
 
 (deftest testing-scenarios
-  (let [test (first *command-line-args*)
-        scenarios (str "./tests/" test ".edn")
-        solution (str "./target/" test)]
-    (testing test
+  (let [[solution scenarios] *command-line-args*]
+    (testing solution
       (doseq [{:keys [scenario input expected]} (edn/read-string (slurp scenarios))
               :let [{:keys [exit out err]} (sh solution :in input)
                     actual (str/trimr out)]]
