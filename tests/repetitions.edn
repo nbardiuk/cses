@@ -1,0 +1,4 @@
+[{:scenario "example" :input "ATTCGGGA" :expected "3"}
+ {:scenario "minimal" :input "A" :expected "1"}
+ {:scenario "all singles" :input "ATCGATCG" :expected "1"}
+ {:scenario "last longest" :input "ATTCCC" :expected "3"}]
