@@ -1,0 +1,1 @@
+[{:scenario "example" :input "3\n2 3\n1 1\n4 2" :expected "8\n1\n15"}]
