@@ -1,0 +1,12 @@
+[{:scenario "1 no" :input "1" :expected "NO"}
+ {:scenario "2 no" :input "2" :expected "NO"}
+ {:scenario "3 any yes" :input "3" :expected "YES\n2\n1 2 \n1\n3"}
+ {:scenario "4 any yes" :input "4" :expected "YES\n2\n2 3 \n2\n1 4"}
+ {:scenario "5 no" :input "5" :expected "NO"}
+ {:scenario "6 no" :input "6" :expected "NO"}
+ {:scenario "7 any yes" :input "7" :expected "YES\n4\n2 3 4 5 \n3\n1 6 7"}
+ {:scenario "8 any yes" :input "8" :expected "YES\n5\n1 2 4 5 6 \n3\n3 7 8"}
+ {:scenario "9 no" :input "9" :expected "NO"}
+ {:scenario "10 no" :input "10" :expected "NO"}
+ {:scenario "11 any yes" :input "11" :expected "YES\n7\n1 2 4 5 6 7 8 \n4\n3 9 10 11"}
+ {:scenario "12 any yes" :input "12" :expected "YES\n8\n1 2 3 4 5 7 8 9 \n4\n6 10 11 12"}]
