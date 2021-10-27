@@ -1,0 +1,4 @@
+[{:scenario "3" :input "3" :expected "8"}
+ {:scenario "255" :input "255" :expected "396422633"}
+ {:scenario "138367" :input "138367" :expected "86267609"}
+ {:scenario "1000000" :input "1000000" :expected "235042059"}]
